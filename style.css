@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5001a0;
+}
+
+/* Main box */
+.container {
+    width: 350px;
+    background: rgb(236, 235, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input area */
+.task-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.task-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.add-btn {
+    padding: 10px 14px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Date input */
+.date-row input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Task list */
+.task-list li {
+    list-style: none;
+    padding: 10px;
+    background: #f7f7f7;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Completed task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Buttons */
+.task-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Clear button */
+.clear-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
